@@ -7,6 +7,10 @@
     <title>Sykmelding til arbeidsgiver</title>
 </head>
 <body>
+    <div id="footer">
+        <span class="navn">{{ ansatt.navn }}</span>
+        <span class="sidetall">side <span id="pagenumber"></span> av <span id="pagecount"></span></span>
+    </div>
     <header class="header">
         <h1>
             <img class="header-ikon" alt="person med slips ikon"
@@ -166,10 +170,5 @@
             </div>
         </div>
     {{/if}}
-
-    <div id="footer">
-        <span class="navn">{{ ansatt.navn }}</span>
-        <span class="sidetall">side <span id="pagenumber"></span> av <span id="pagecount"></span></span>
-    </div>
 </body>
 </html>
