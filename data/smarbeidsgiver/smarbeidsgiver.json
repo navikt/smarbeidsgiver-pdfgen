@@ -4,7 +4,7 @@
     "navn": "Navn Navnesen"
   },
   "narmesteleder": {
-    "fnrLeder": "01987654321",
+    "fnr": "01987654321",
     "navn": "Leder Ledesen",
     "telefonnummer": "90909090",
     "epost": "test@nav.no",
@@ -19,7 +19,7 @@
       {
         "fom": "2020-01-03",
         "tom": "2020-01-04",
-        "varighet": "2",
+        "varighet": 2,
         "gradert": null,
         "behandlingsdager": 0,
         "innspillTilArbeidsgiver": null,
@@ -37,7 +37,7 @@
       {
         "fom": "2020-01-05",
         "tom": "2020-01-06",
-        "varighet": "2",
+        "varighet": 2,
         "gradert": {
           "reisetilskudd": false,
           "grad": 50
@@ -51,7 +51,7 @@
       {
         "fom": "2020-01-07",
         "tom": "2020-01-08",
-        "varighet": "2",
+        "varighet": 2,
         "gradert": null,
         "behandlingsdager": 1,
         "innspillTilArbeidsgiver": null,
@@ -62,7 +62,7 @@
       {
         "fom": "2020-01-09",
         "tom": "2020-01-10",
-        "varighet": "2",
+        "varighet": 2,
         "gradert": null,
         "behandlingsdager": 0,
         "innspillTilArbeidsgiver": "innspill",
@@ -73,7 +73,7 @@
       {
         "fom": "2020-01-11",
         "tom": "2020-01-12",
-        "varighet": "2",
+        "varighet": 2,
         "gradert": null,
         "behandlingsdager": 0,
         "innspillTilArbeidsgiver": null,
