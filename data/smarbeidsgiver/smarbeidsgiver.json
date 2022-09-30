@@ -1,228 +1,96 @@
 {
-  "pasient": {
-    "fornavn": "Fornavn",
-    "mellomnavn": "Mellomnavnsen",
-    "etternavn": "Etternavn",
-    "personnummer": "123456789",
-    "tlfNummer": "98765432"
+  "ansatt": {
+    "fnr": "12345678910",
+    "navn": "Navn Navnesen"
   },
-  "sykmelding": {
-    "id": "detteerensykmeldingid",
-    "msgId": "abcdef",
-    "pasientAktoerId": "41234123",
-    "medisinskVurdering": {
-      "hovedDiagnose": {
-        "system": "2.16.578.1.12.4.1.1.7170",
-        "kode": "K24",
-        "tekst": "Engstelig for hjertesykdom"
-      },
-      "biDiagnoser": [
-        {
-          "system": "2.16.578.1.12.4.1.1.7170",
-          "kode": "-57",
-          "tekst": "Fysikalsk behandling/rehabilitering"
-        }
-      ],
-      "svangerskap": true,
-      "yrkesskade": true,
-      "yrkesskadeDato": "2018-10-01",
-      "annenFraversArsak": {
-        "beskrivelse": "Stor smittefare",
-        "grunn": [
-          "NODVENDIG_KONTROLLUNDENRSOKELSE",
-          "SMITTEFARE",
-          "MOTTAR_TILSKUDD_GRUNNET_HELSETILSTAND"
-        ]
-      }
-    },
-    "skjermesForPasient": false,
-    "arbeidsgiver": {
-      "harArbeidsgiver": "EN_ARBEIDSGIVER",
-      "navn": "NAV IKT",
-      "yrkesbetegnelse": "Utvikler",
-      "stillingsprosent": 100
-    },
-    "perioder": [
+  "narmesteleder": {
+    "fnr": "01987654321",
+    "navn": "Leder Ledesen",
+    "telefonnummer": "90909090",
+    "epost": "test@nav.no",
+    "aktivFom": "2017-05-09"
+  },
+  "arbeidsgiverSykmelding": {
+    "id": "b5e84795-43a8-4adb-ac1d-4b2e1e0c5fb7",
+    "syketilfelleStartDato": "2019-05-09",
+    "behandletTidspunkt": "2019-12-18T23:00:00.296954Z",
+    "arbeidsgiverNavn": "Min Bedrift",
+    "sykmeldingsperioder": [
       {
-        "fom": "2018-10-03",
-        "tom": "2018-10-09",
-        "aktivitetIkkeMulig": null,
-        "avventendeInnspillTilArbeidsgiver": null,
-        "behandlingsdager": null,
+        "fom": "2020-01-03",
+        "tom": "2020-01-04",
+        "varighet": 2,
         "gradert": null,
-        "reisetilskudd": true
-      },
-      {
-        "fom": "2018-10-10",
-        "tom": "2018-10-12",
+        "behandlingsdager": 0,
+        "innspillTilArbeidsgiver": null,
+        "type": "AKTIVITET_IKKE_MULIG",
         "aktivitetIkkeMulig": {
-          "medisinskArsak": {
-            "beskrivelse": "Grunnet brukket bein kan ikke pasienten gå opp trapper",
-            "arsak": [
-              "TILSTAND_HINDRER_AKTIVITET",
-              "AKTIVITET_FORHINDRER_BEDRING"
-            ]
-          },
-          "arbeidsrelatertArsak": null
-        },
-        "avventendeInnspillTilArbeidsgiver": null,
-        "behandlingsdager": null,
-        "gradert": null,
-        "reisetilskudd": false
-      },
-      {
-        "fom": "2018-10-13",
-        "tom": "2018-10-17",
-        "aktivitetIkkeMulig": {
-          "medisinskArsak": null,
           "arbeidsrelatertArsak": {
-            "beskrivelse": "Grunnet brukket bein kan ikke pasienten gå opp trapper",
+            "beskrivelse": "beskrivelse",
             "arsak": [
-              "MANGLENDE_TILRETTELEGGING",
-              "ANNET"
+              "MANGLENDE_TILRETTELEGGING"
             ]
           }
         },
-        "avventendeInnspillTilArbeidsgiver": null,
-        "behandlingsdager": null,
-        "gradert": null,
         "reisetilskudd": false
       },
       {
-        "fom": "2018-10-18",
-        "tom": "2018-11-12",
-        "aktivitetIkkeMulig": null,
-        "avventendeInnspillTilArbeidsgiver": null,
-        "behandlingsdager": null,
-        "gradert": {
-          "reisetilskudd": true,
-          "grad": 56
-        },
-        "reisetilskudd": false
-      },
-      {
-        "fom": "2018-11-13",
-        "tom": "2018-11-20",
-        "aktivitetIkkeMulig": null,
-        "avventendeInnspillTilArbeidsgiver": null,
-        "behandlingsdager": 3,
-        "gradert": null,
-        "reisetilskudd": false
-      },
-      {
-        "fom": "2018-11-21",
-        "tom": "2018-11-23",
-        "aktivitetIkkeMulig": null,
-        "avventendeInnspillTilArbeidsgiver": null,
-        "behandlingsdager": null,
-        "gradert": {
-          "reisetilskudd": true,
-          "grad": 56
-        },
-        "reisetilskudd": false
-      },
-      {
-        "fom": "2018-11-24",
-        "tom": "2018-11-25",
-        "aktivitetIkkeMulig": null,
-        "avventendeInnspillTilArbeidsgiver": "Trenger tilrettelegging",
-        "behandlingsdager": null,
+        "fom": "2020-01-05",
+        "tom": "2020-01-06",
+        "varighet": 2,
         "gradert": {
           "reisetilskudd": false,
-          "grad": 56
+          "grad": 50
         },
+        "behandlingsdager": 0,
+        "innspillTilArbeidsgiver": null,
+        "type": "GRADERT",
+        "aktivitetIkkeMulig": null,
         "reisetilskudd": false
+      },
+      {
+        "fom": "2020-01-07",
+        "tom": "2020-01-08",
+        "varighet": 2,
+        "gradert": null,
+        "behandlingsdager": 1,
+        "innspillTilArbeidsgiver": null,
+        "type": "BEHANDLINGSDAGER",
+        "aktivitetIkkeMulig": null,
+        "reisetilskudd": false
+      },
+      {
+        "fom": "2020-01-09",
+        "tom": "2020-01-10",
+        "varighet": 2,
+        "gradert": null,
+        "behandlingsdager": 0,
+        "innspillTilArbeidsgiver": "innspill",
+        "type": "AVVENTENDE",
+        "aktivitetIkkeMulig": null,
+        "reisetilskudd": false
+      },
+      {
+        "fom": "2020-01-11",
+        "tom": "2020-01-12",
+        "varighet": 2,
+        "gradert": null,
+        "behandlingsdager": 0,
+        "innspillTilArbeidsgiver": null,
+        "type": "REISETILSKUDD",
+        "aktivitetIkkeMulig": null,
+        "reisetilskudd": true
       }
     ],
     "prognose": {
       "arbeidsforEtterPeriode": true,
-      "hensynArbeidsplassen": "word word word word word word word word word word word word word word word word word word word word word word word word word word word word word",
-      "erIArbeid": {
-        "egetArbeidPaSikt": true,
-        "annetArbeidPaSikt": true,
-        "arbeidFOM": "2018-11-21",
-        "vurderingsdato": "2018-10-30"
-      },
-      "erIkkeIArbeid": {
-        "arbeidsforFOM": "2018-10-30",
-        "arbeidsforPaSikt": true,
-        "vurderingsdato": "2018-10-30"
-      }
+      "hensynArbeidsplassen": "hensyn"
     },
-    "utdypendeOpplysninger": {
-      "6.3": {
-        "6.3.1": {
-          "sporsmal": "Er pasienten veldig syk?",
-          "svar": "word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word",
-          "restriksjoner": [
-            "SKJERMET_FOR_ARBEIDSGIVER"
-          ]
-        },
-        "6.3.2": {
-          "sporsmal": "Er pasienten klar får å jobbe?",
-          "svar": "word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word",
-          "restriksjoner": [
-            "SKJERMET_FOR_ARBEIDSGIVER"
-          ]
-        }
-      }
-    },
-    "tiltakArbeidsplassen": "word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word",
-    "tiltakNAV": "word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word",
-    "andreTiltak": "word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word",
-    "meldingTilNAV": {
-      "bistandUmiddelbart": false,
-      "beskrivBistand": null
-    },
-    "meldingTilArbeidsgiver": "Dette er en testsetning som ikke er skrevet av en lege",
-    "kontaktMedPasient": {
-      "kontaktDato": "2018-10-04",
-      "begrunnelseIkkeKontakt": "word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word"
-    },
-    "behandletTidspunkt": "2018-10-14T14:52:35",
+    "tiltakArbeidsplassen": "tiltak",
+    "meldingTilArbeidsgiver": "melding",
     "behandler": {
-      "fornavn": "Lege",
-      "mellomnavn": null,
-      "etternavn": "Legesen",
-      "aktoerId": "12890371",
-      "fnr": "22110012345",
-      "hpr": "5105283",
-      "her": "1626297",
-      "adresse": {
-        "gate": "Skoleveien 4",
-        "postnummer": 5401,
-        "kommune": "STORD",
-        "postboks": "19065 Kirkeveien",
-        "land": "NO"
-      },
-      "tlf": "25003000"
-    },
-    "avsenderSystem": {
-      "navn": "NAV Test generator",
-      "versjon": "1.0"
-    },
-    "syketilfelleStartDato": "2019-01-01",
-    "signaturDato": "2018-10-14T14:52:35",
-    "navnFastlege": "Per Hansen"
-  },
-  "validationResult": {
-    "status": "INVALID",
-    "ruleHits": [
-      {
-        "ruleName": "BEHANDLER_KI_NOT_USING_VALID_DIAGNOSECODE_TYPE",
-        "messageForSender": "Behandler er manuellterapeut/kiropraktor eller fysioterapeut med autorisasjon har angitt annen diagnose enn kapitel L (muskel og skjelettsykdommer)",
-        "messageForUser": "Den som skrev sykmeldingen mangler autorisasjon.",
-        "ruleStatus": "INVALID"
-      },
-      {
-        "ruleName": "NUMBER_OF_TREATMENT_DAYS_SET",
-        "messageForSender": "Hvis behandlingsdager er angitt sendes meldingen til manuell behandling.",
-        "messageForUser": "Hvis behandlingsdager er angitt sendes meldingen til manuell behandling.",
-        "ruleStatus": "MANUAL_PROCESSING"
-      }
-    ]
-  },
-  "mottattDato": "2018-10-14T14:52:35",
-  "behandlerKontorOrgName": "Legekontor",
-  "rulesetVersion": "2"
+      "navn": "Trond Lege Superlege",
+      "tlf": "Tel:37375555"
+    }
+  }
 }
