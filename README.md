@@ -7,7 +7,10 @@ Team Sykmelding sin PDF-generator for arbeidsgivers versjon av sykmeldingen.
 * [pdfgen](https://github.com/navikt/pdfgen)
 
 #### Creating a docker image
-Creating a docker image should be as simple as `docker build -t smarbeidsgiver-pdfgen .`
+Creating a docker image should be as simple as 
+```bash
+docker build -t smarbeidsgiver-pdfgen .
+```
 
 ## Getting started
 ### Run in development mode
@@ -23,10 +26,13 @@ docker run \
         -e JDK_JAVA_OPTIONS \
         -it \
         --rm \
-        ghcr.io/navikt/pdfgen:1.5.1
+        ghcr.io/navikt/pdfgen:2.0.3
 ```
 
-Or you can use the convenience script `./run_development.sh`
+Or you can use the convenience script
+```bash
+./run_development.sh
+```
 
 When running the application you can use the env var `DISABLE_PDF_GET` to enable GET requests at
 `/api/v1/genpdf/<application>/<template>` which looks for test data at `data/<application>/<template>.json` and outputs
@@ -43,10 +49,10 @@ templates will look like in production.
 
 ### Contact
 
-This project is maintained by navikt/teamsykmelding
+This project is maintained by [navikt/teamsykmelding](CODEOWNERS)
 
-Questions and/or feature requests? Please create an [issue](https://github.com/navikt/smarbeidsgiver-pdfgen/issues).
+Questions and/or feature requests? Please create an [issue](https://github.com/navikt/smarbeidsgiver-pdfgen/issues)
 
 If you work in [@navikt](https://github.com/navikt) you can reach us at the Slack
-channel [#team-sykmelding](https://nav-it.slack.com/archives/CMA3XV997).
+channel [#team-sykmelding](https://nav-it.slack.com/archives/CMA3XV997)
 
