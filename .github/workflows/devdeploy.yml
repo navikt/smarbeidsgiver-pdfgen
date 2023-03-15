@@ -7,6 +7,9 @@ on:
 
 jobs:
   build-push-deploy:
+    permissions:
+      contents: "read"
+      id-token: "write"
     name: Checkout code and create docker tag
     runs-on: ubuntu-latest
     steps:
