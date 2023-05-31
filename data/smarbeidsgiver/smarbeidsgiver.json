@@ -91,6 +91,7 @@
     "behandler": {
       "navn": "Trond Lege Superlege",
       "tlf": "Tel:37375555"
-    }
+    },
+    "egenmeldingsdager": ["2020-01-11", "2020-01-12"]
   }
 }

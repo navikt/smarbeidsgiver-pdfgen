@@ -26,7 +26,7 @@ docker run \
         -e JDK_JAVA_OPTIONS \
         -it \
         --rm \
-        ghcr.io/navikt/pdfgen:2.0.5
+        ghcr.io/navikt/pdfgen:2.0.7
 ```
 
 Or you can use the convenience script

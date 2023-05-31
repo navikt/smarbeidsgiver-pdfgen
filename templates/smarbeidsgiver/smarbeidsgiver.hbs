@@ -92,8 +92,16 @@
                 </div>
                 <div class="sykmelding-nokkelopplysning">
                     <h3>Når startet det legemeldte fraværet?</h3>
-                    <p>&#8211; {{iso_to_date arbeidsgiverSykmelding.syketilfelleStartDato }}</p>
+                    <p>&#8211; {{iso_to_date syketilfelleStartDato }}</p>
                 </div>
+                {{#if arbeidsgiverSykmelding.egenmeldingsdager }}
+                    <div class="sykmelding-nokkelopplysning">
+                        <h3>Oppgitte egenmeldingsdager</h3>
+                    {{#each arbeidsgiverSykmelding.egenmeldingsdager }}
+                            <p>&#8211; {{iso_to_date this }}</p>
+                    {{/each}}
+                    </div>
+                {{/if}}
             </div>
             {{#each arbeidsgiverSykmelding.sykmeldingsperioder }}
                 {{#if aktivitetIkkeMulig.arbeidsrelatertArsak }}
