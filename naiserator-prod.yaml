@@ -10,7 +10,7 @@ spec:
   port: 8080
   replicas:
     min: 2
-    max: 4
+    max: 6
   liveness:
     path: /internal/is_alive
     timeout: 1
@@ -34,7 +34,7 @@ spec:
       memory: 2Gi
     requests:
       cpu: 200m
-      memory: 550Mi
+      memory: 756Mi
   accessPolicy:
     inbound:
       rules:
