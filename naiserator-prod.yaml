@@ -10,7 +10,7 @@ spec:
   port: 8080
   replicas:
     min: 2
-    max: 3
+    max: 6
   liveness:
     path: /internal/is_alive
     timeout: 1
