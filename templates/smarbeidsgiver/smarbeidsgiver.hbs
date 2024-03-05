@@ -65,6 +65,8 @@
                       src="{{ image "Checkboks.png" }}" />
                     <span class="inline-ikon">Pasienten er 100 % arbeidsfør etter perioden</span>
                 </p>
+                    {{else}}
+                    <p><em>Behandler har ikke notert om pasienten er arbeidsfør etter denne perioden</em></p>
                 {{/if}}
             </div>
             {{#if arbeidsgiverSykmelding.prognose.hensynArbeidsplassen }}
@@ -116,6 +118,16 @@
                             </p>
                             <h3>Angi hva som er årsaken</h3>
                             <p>&#8211; {{ aktivitetIkkeMulig.arbeidsrelatertArsak.beskrivelse }}</p>
+                        </div>
+                    </div>
+                    {{else}}
+                    <div class="sykmelding-seksjon">
+                        <h2>Mulighet for arbeid</h2>
+                        <div class="sykmelding-nokkelopplysning">
+                            <h3>Pasienten kan ikke være i arbeid (100 % sykmeldt)</h3>
+                            <div>
+                                <p><em>Behandler har ikke notert om forhold på arbeidsplassen vanskeliggjør arbeidsrelatert aktivitet</em></p>
+                            </div>
                         </div>
                     </div>
                 {{/if}}
