@@ -34,10 +34,10 @@ spec:
       runtime: java
   resources:
     limits:
-      memory: 2Gi
+      memory: 3Gi
     requests:
       cpu: 100m
-      memory: 700Mi
+      memory: 1Gi
   accessPolicy:
     inbound:
       rules:
