@@ -38,9 +38,9 @@ spec:
         - id: elastic
   resources:
     limits:
-      memory: 3Gi
+      memory: 2Gi
     requests:
-      cpu: 50m
+      cpu: 30m
       memory: 500Mi
   accessPolicy:
     inbound:
