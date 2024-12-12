@@ -144,6 +144,15 @@
                     </div>
                 </div>
             {{/if}}
+            {{#if arbeidsgiverSykmelding.kontaktMedPasient.kontaktDato }}
+                <div class="sykmelding-seksjon">
+                    <div class="sykmelding-nokkelopplysning">
+                        <h2>Tilbakedatering</h2>
+                        <h3>Dato for dokumenterbar kontakt med pasienten</h3>
+                        <p>&#8211; {{iso_to_date arbeidsgiverSykmelding.kontaktMedPasient.kontaktDato }}</p>
+                    </div>
+                </div>
+            {{/if}}
             <div class="sykmelding-seksjon">
                 <div class="sykmelding-nokkelopplysning">
                     <h2>Annet</h2>
