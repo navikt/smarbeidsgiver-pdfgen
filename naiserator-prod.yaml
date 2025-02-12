@@ -10,7 +10,7 @@ spec:
   port: 8080
   replicas:
     min: 2
-    max: 6
+    max: 8
     cpuThresholdPercentage: 80
   liveness:
     path: /internal/is_alive
@@ -40,7 +40,7 @@ spec:
     limits:
       memory: 2Gi
     requests:
-      cpu: 70m
+      cpu: 60m
       memory: 900Mi
   accessPolicy:
     inbound:
