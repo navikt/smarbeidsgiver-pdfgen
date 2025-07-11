@@ -25,7 +25,6 @@ jobs:
       - name: deploy to dev-gcp
         uses: nais/deploy/actions/deploy@master
         env:
-          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY_TEAMSYKMELDING }}
           CLUSTER: dev-gcp
           RESOURCE: naiserator-dev.yaml
           VAR: image=${{ steps.docker-build-push.outputs.image }}
