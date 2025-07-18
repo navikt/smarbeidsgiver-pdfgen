@@ -11,7 +11,9 @@ spec:
   replicas:
     min: 2
     max: 8
-    cpuThresholdPercentage: 90
+    scalingStrategy:
+      cpu:
+        thresholdPercentage: 90
   liveness:
     path: /internal/is_alive
     timeout: 1
