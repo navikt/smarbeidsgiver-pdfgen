@@ -43,7 +43,7 @@ spec:
       memory: 2Gi
     requests:
       cpu: 140m
-      memory: 800Mi
+      memory: 850Mi
   accessPolicy:
     inbound:
       rules:
