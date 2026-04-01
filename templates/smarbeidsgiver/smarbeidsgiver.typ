@@ -83,8 +83,8 @@
   #v(0.2cm)
   #rect(fill: rgb("#7f756c"), width: 5cm, height: 0.6cm)
   #v(0.2cm)
-  #let prognose = sykmelding.prognose
-  #if prognose.at("arbeidsforEtterPeriode", default: false) == true [
+  #let prognose = sykmelding.at("prognose", default: none)
+  #if prognose != none and prognose.at("arbeidsforEtterPeriode", default: false) == true [
     ☑ Pasienten er 100 % arbeidsfør etter perioden
   ] else [
     _Behandler har ikke notert om pasienten er arbeidsfør etter denne perioden_
@@ -94,7 +94,8 @@
 #v(0.3cm)
 
 // Workplace considerations from prognosis
-#let hensynArbeidsplassen = sykmelding.prognose.at("hensynArbeidsplassen", default: none)
+#let prognose = sykmelding.at("prognose", default: none)
+#let hensynArbeidsplassen = if prognose != none { prognose.at("hensynArbeidsplassen", default: none) } else { none }
 #if hensynArbeidsplassen != none and str(hensynArbeidsplassen) != "" [
   #block(below: 0.3cm, breakable: false)[
     #text(size: 13pt, fill: rgb("#7f756c"))[Beskriv eventuelle hensyn som må tas på arbeidsplassen]
