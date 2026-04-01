@@ -27,22 +27,16 @@ spec:
     periodSeconds: 5
     failureThreshold: 30
   leaderElection: false
-  prometheus:
-    enabled: true
-    path: /internal/prometheus
   observability:
-    autoInstrumentation:
-      enabled: true
-      runtime: java
     logging:
       destinations:
         - id: loki
   resources:
     limits:
-      memory: 2Gi
+      memory: 512Mi
     requests:
       cpu: 15m
-      memory: 600Mi
+      memory: 128Mi
   accessPolicy:
     inbound:
       rules:
