@@ -4,9 +4,9 @@ Team Sykmelding sin PDF-generator for arbeidsgivers versjon av sykmeldingen
 
 ## Technologies & Tools
 
-* [pdfgen](https://github.com/navikt/pdfgen)
+* [pdfgenrs](https://github.com/navikt/pdfgenrs)
 * Docker
-* [Handlebars js](https://handlebarsjs.com/)
+* [Typst](https://typst.app/)
 
 #### Creating a docker image
 Creating a docker image should be as simple as 
@@ -21,18 +21,16 @@ To run the application with templates, data and fonts locally mounted you can us
 ./run_development.sh
 ```
 
-When running the application you can use the env var `DISABLE_PDF_GET` to enable GET requests at
+When running the application you can test GET requests at
 `/api/v1/genpdf/<application>/<template>` which looks for test data at `data/<application>/<template>.json` and outputs
-a PDF to your browser. Additionally, the template folder will be fetched on every request, and reflect any changes made
-since the last GET, making this ideal for developing new templates for your application.
+a PDF to your browser.
 
 The template and data directory structure both follow the `<application>/<template>` structure.
 Example url: `http://0.0.0.0:8080/api/v1/genpdf/smarbeidsgiver/smarbeidsgiver`
 
-### Notes on developing templates on Windows
-It is a known issue that pdfgen's output documents look different depending on whether the template
-has `\r\n` or `\n` as line endings. Therefore, it is strongly recommended to configure Git to not convert newlines, as well as ensure that your editor ends its lines with LF (`\n`) and not CRLF (`\r\n`), as the former will accurately show what your
-templates will look like in production.
+### Example pdf output
+
+![smarbeidsgiver.png](smarbeidsgiver.png)
 
 ### Contact
 

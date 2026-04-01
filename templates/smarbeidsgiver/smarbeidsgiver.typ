@@ -38,7 +38,7 @@
     columns: (28pt, auto),
     column-gutter: 0.25cm,
     align: horizon,
-    image("resources/arbeidsgiver.svg", height: 24pt),
+    image("resources/arbeidsgiver.svg", height: 24pt, alt: "person med slips ikon"),
     text(size: 18pt, weight: "regular")[Sykmelding til arbeidsgiver],
   )
 ]
