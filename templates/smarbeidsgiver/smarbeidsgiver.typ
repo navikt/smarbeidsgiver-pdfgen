@@ -2,6 +2,7 @@
 #let ansatt = data.ansatt
 #let sykmelding = data.arbeidsgiverSykmelding
 #let narmesteleder = data.at("narmesteleder", default: none)
+#let prognose = sykmelding.at("prognose", default: none)
 
 #let iso_to_nor_date(date_str) = {
   if date_str == none { return "" }
@@ -83,7 +84,6 @@
   #v(0.2cm)
   #rect(fill: rgb("#7f756c"), width: 5cm, height: 0.6cm)
   #v(0.2cm)
-  #let prognose = sykmelding.at("prognose", default: none)
   #if prognose != none and prognose.at("arbeidsforEtterPeriode", default: false) == true [
     ☑ Pasienten er 100 % arbeidsfør etter perioden
   ] else [
@@ -94,7 +94,6 @@
 #v(0.3cm)
 
 // Workplace considerations from prognosis
-#let prognose = sykmelding.at("prognose", default: none)
 #let hensynArbeidsplassen = if prognose != none { prognose.at("hensynArbeidsplassen", default: none) } else { none }
 #if hensynArbeidsplassen != none and str(hensynArbeidsplassen) != "" [
   #block(below: 0.3cm, breakable: false)[
